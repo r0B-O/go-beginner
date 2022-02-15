@@ -14,13 +14,18 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
+	// A slice or array of names
+	names := []string{"rob-o", "Sree", "Kiran"}
+
 	// Get a  greeting message and print it
-	message, err := greetings.Hello("rob-o")
+	message, err := greetings.Hellos(names)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// If no error was returned, print the returned message
 	// in the console
-	fmt.Println(message)
+	for _, greeting := range message {
+		fmt.Println(greeting)
+	}
 }
