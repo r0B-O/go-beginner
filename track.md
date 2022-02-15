@@ -47,3 +47,8 @@ func init() {
     // gopath may be overridden by --gopath flag on command line.
     flag.StringVar(&gopath, "gopath", gopath, "override default GOPATH")
 }
+
+5. for Loop --> refer effective go
+_ blank identifier
+range of slices or maps
+use make() to initialize map/slice/chan
